@@ -32,8 +32,6 @@ D:\Projects\C#\MoviesGallery\MoviesGallery\bin\Debug\netcoreapp3.0\System.Runtim
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.csprojAssemblyReference.cache
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.AssemblyInfoInputs.cache
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.AssemblyInfo.cs
-D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.csproj.CoreCompileInputs.cache
-D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.RazorTargetAssemblyInfo.cache
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.csproj.CopyComplete
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\staticwebassets\MoviesGallery.StaticWebAssets.Manifest.cache
@@ -41,3 +39,5 @@ D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\staticwebasse
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.dll
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.pdb
 D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.genruntimeconfig.cache
+D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.csproj.CoreCompileInputs.cache
+D:\Projects\C#\MoviesGallery\MoviesGallery\obj\Debug\netcoreapp3.0\MoviesGallery.MvcApplicationPartsAssemblyInfo.cache

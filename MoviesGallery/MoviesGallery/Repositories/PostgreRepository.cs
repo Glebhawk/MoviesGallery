@@ -16,7 +16,14 @@ namespace MoviesGallery.Repositories
         {
             using (movieContext = new MovieContext())
             {
-                return movieContext.movies.Include(m => m.director).ToList(); // Why it isn`t working?
+                return movieContext.movies
+                    .Include("director")
+                    .Include(m => m.genres_of_movie).
+                    Include(m => m.actors_of_movie)
+                    .ThenInclude(a => a.actor)
+                    .Include(m => m.writers_of_movie)
+                    .ThenInclude(w => w.writer)
+                    .ToList(); // Why it is working now?
             }
         }
 

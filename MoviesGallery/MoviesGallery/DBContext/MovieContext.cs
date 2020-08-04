@@ -11,6 +11,9 @@ namespace MoviesGallery.DBContext
     {
         public DbSet<Movie> movies { get; set; }
         public DbSet<Person> persons { get; set; }
+        public DbSet<Genre> genres_of_movie { get; set; }
+        public DbSet<Actors_of_movie> actors_of_movie { get; set; }
+        public DbSet<Writers_of_movie> writers_of_movie { get; set; }
 
         public MovieContext()
         {
