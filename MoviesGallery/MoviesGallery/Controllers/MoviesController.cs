@@ -28,5 +28,23 @@ namespace MoviesGallery.Controllers
                 return moviesService.GetAllMovies();
             }
         }
+
+        [HttpGet]
+        [ExactQueryParam("participantId", "participantType", "programName")]
+        public Movie Get(int id)
+        {
+            {
+                throw new Exception();
+                return moviesService.GetMovieById(id);
+            }
+        }
+
+        //[HttpGet("search")]
+        //public IEnumerable<Movie> Get(string search)
+        //{
+        //    {
+        //        return moviesService.FindMoviesByTitle(search);
+        //    }
+        //}
     }
 }

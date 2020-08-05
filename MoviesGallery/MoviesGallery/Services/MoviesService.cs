@@ -9,7 +9,7 @@ namespace MoviesGallery.Services
 {
     public class MoviesService
     {
-        private IRepository moviesRepository { get; set; }
+        private PostgreRepository moviesRepository { get; set; }
 
         public MoviesService()
         {
@@ -24,6 +24,11 @@ namespace MoviesGallery.Services
         public Movie GetMovieById(int id)
         {
             return moviesRepository.GetById(id);
-        } 
+        }
+
+        public IEnumerable<Movie> FindMoviesByTitle(string search)
+        {
+            return moviesRepository.FindAllByTitle(search);
+        }
     }
 }

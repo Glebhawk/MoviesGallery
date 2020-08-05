@@ -13,6 +13,6 @@ namespace MoviesGallery.Model
         public int writerid { get; set; }
         public Person writer { get; set; }
 
-        public string? role { get; set; }
+        public string role { get; set; }
     }
 }

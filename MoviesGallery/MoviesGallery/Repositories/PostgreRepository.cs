@@ -8,28 +8,46 @@ using System.Threading.Tasks;
 
 namespace MoviesGallery.Repositories
 {
-    public class PostgreRepository : IRepository
+    public class PostgreRepository : GenericRepository<Movie>
     {
-        private MovieContext movieContext { get; set; }
-
-        public IEnumerable<Movie> GetAll()
+        public override IEnumerable<Movie> GetAll()
         {
-            using (movieContext = new MovieContext())
+            using (dbContext = new MovieContext())
             {
-                return movieContext.movies
-                    .Include("director")
-                    .Include(m => m.genres_of_movie).
-                    Include(m => m.actors_of_movie)
-                    .ThenInclude(a => a.actor)
-                    .Include(m => m.writers_of_movie)
-                    .ThenInclude(w => w.writer)
+                return dbContext.Set<Movie>()
+                    .Include(m => m.director)
+                    .Include(m => m.genres_of_movie)
+                    .Include(m => m.actors_of_movie).ThenInclude(a => a.actor)
+                    .Include(m => m.writers_of_movie).ThenInclude(w => w.writer)
                     .ToList(); // Why it is working now?
             }
         }
 
-        public Movie GetById(int id)
+        public override Movie GetById(int id)
         {
-            return movieContext.movies.Find(id);
+            using(dbContext = new MovieContext())
+            {
+                return dbContext.Set<Movie>()
+                    .Include(m => m.director)
+                    .Include(m => m.genres_of_movie)
+                    .Include(m => m.actors_of_movie).ThenInclude(a => a.actor)
+                    .Include(m => m.writers_of_movie).ThenInclude(w => w.writer)
+                    .Single(m => m.id == id);
+            }
+        }
+
+        public IEnumerable<Movie> FindAllByTitle(string search_string)
+        {
+            using (dbContext = new MovieContext())
+            {
+                return dbContext.Set<Movie>()
+                    .Include(m => m.director)
+                    .Include(m => m.genres_of_movie)
+                    .Include(m => m.actors_of_movie).ThenInclude(a => a.actor)
+                    .Include(m => m.writers_of_movie).ThenInclude(w => w.writer)
+                    .Where(m => m.title.Contains(search_string, StringComparison.CurrentCultureIgnoreCase))
+                    .ToList();
+            }
         }
     }
 }
