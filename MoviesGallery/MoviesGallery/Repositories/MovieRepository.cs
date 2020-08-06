@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MoviesGallery.Repositories
 {
-    public class PostgreRepository : GenericRepository<Movie>
+    public class MovieRepository : GenericRepository<Movie>
     {
         public override IEnumerable<Movie> GetAll()
         {
@@ -19,7 +19,7 @@ namespace MoviesGallery.Repositories
                     .Include(m => m.genres_of_movie)
                     .Include(m => m.actors_of_movie).ThenInclude(a => a.actor)
                     .Include(m => m.writers_of_movie).ThenInclude(w => w.writer)
-                    .ToList(); // Why it is working now?
+                    .ToList();
             }
         }
 
@@ -56,10 +56,6 @@ namespace MoviesGallery.Repositories
             using (dbContext = new MovieContext())
             {
                 return dbContext.Set<Movie>()
-                    .Include(m => m.director)
-                    .Include(m => m.genres_of_movie)
-                    .Include(m => m.actors_of_movie).ThenInclude(a => a.actor)
-                    .Include(m => m.writers_of_movie).ThenInclude(w => w.writer)
                     .Where(m => m.title.ToLower().Contains(search_string.ToLower()));
             }
         }

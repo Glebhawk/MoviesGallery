@@ -9,11 +9,11 @@ namespace MoviesGallery.Services
 {
     public class MoviesService
     {
-        private PostgreRepository moviesRepository { get; set; }
+        private MovieRepository moviesRepository { get; set; }
 
         public MoviesService()
         {
-            moviesRepository = new PostgreRepository();
+            moviesRepository = new MovieRepository();
         }
 
         public IEnumerable<Movie> GetAllMovies()

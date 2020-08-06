@@ -14,13 +14,14 @@ namespace MoviesGallery.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        public MoviesService moviesService { get; set; }
+        public MoviesService moviesService { get; set; } // Truly, I can use repository with same result
 
         public MoviesController()
         {
             moviesService = new MoviesService();
         }
 
+        //api/movies
         [HttpGet]
         public IEnumerable<Movie> Get()
         {
@@ -29,6 +30,7 @@ namespace MoviesGallery.Controllers
             }
         }
 
+        //api/movies/id=1
         [HttpGet("id={id}")]
         public Movie Get(int id)
         {
@@ -37,6 +39,7 @@ namespace MoviesGallery.Controllers
             }
         }
 
+        //api/movies/search=rogue
         [HttpGet("search={search}")]
         public IEnumerable<Movie> Get(string search)
         {
