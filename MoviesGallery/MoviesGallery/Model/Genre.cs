@@ -9,7 +9,6 @@ namespace MoviesGallery.Model
     {
         public int id { get; set; }
 
-        public int? Movieid { get; set; }
         public string genre { get; set; }
     }
 }

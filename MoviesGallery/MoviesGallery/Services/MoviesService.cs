@@ -26,9 +26,9 @@ namespace MoviesGallery.Services
             return moviesRepository.GetById(id);
         }
 
-        public IEnumerable<Movie> FindMoviesByTitle(string search)
+        public IEnumerable<Movie> FindMoviesByTitleGenreDirector(string search)
         {
-            return moviesRepository.FindAllByTitle(search);
+            return moviesRepository.FindAllByTitleDirectorGenre(search);
         }
     }
 }
