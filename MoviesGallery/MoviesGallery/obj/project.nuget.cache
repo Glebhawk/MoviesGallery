@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V0RCl8VgLs1cybYk49Jcwng9IRKdwC9Q5q698JymJWKfRMZrTwAWBQWsHfF/NCy6ZZSZtaIB7Iv8j/ZAlcPv6Q==",
+  "dgSpecHash": "CPtr4D+1X1vHAmyn3DurJxUWKV9GziwwgZhPc7lhpkFmpqTxESc/4ILA6Og4OaX1y5y0MjNujjb6/pINhKkJZQ==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
+  "projectFilePath": "d:\\Desktop\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\8460\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\8460\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
