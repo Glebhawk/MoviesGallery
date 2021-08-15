@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Desktop\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj": {}
+    "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj": {}
   },
   "projects": {
-    "d:\\Desktop\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj": {
+    "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Desktop\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
         "projectName": "MoviesGallery",
-        "projectPath": "d:\\Desktop\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\MoviesGallery.csproj",
         "packagesPath": "C:\\Users\\8460\\.nuget\\packages\\",
-        "outputPath": "d:\\Desktop\\MoviesGallery\\MoviesGallery\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\MoviesGallery\\MoviesGallery\\MoviesGallery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\8460\\AppData\\Roaming\\NuGet\\NuGet.Config",
